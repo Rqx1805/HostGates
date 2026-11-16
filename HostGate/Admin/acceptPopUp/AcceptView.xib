@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AcceptView" customModule="HostGates" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure to accept this visitor request?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5i-g9-LZ0">
+                    <rect key="frame" x="5" y="42" width="240" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="zRt-sn-bGC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWd-eb-4PP">
+                    <rect key="frame" x="5" y="110" width="115" height="35"/>
+                    <color key="backgroundColor" red="0.54901960780000003" green="0.54117647059999996" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="1wx-Rh-6UP"/>
+                    </constraints>
+                    <state key="normal" title="NO">
+                        <color key="titleColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="noBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="PoY-1q-dhX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szj-9s-W5l">
+                    <rect key="frame" x="130" y="110" width="115" height="35"/>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.56862745100000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="NzI-Sc-50f"/>
+                    </constraints>
+                    <state key="normal" title="YES">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="yesBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZUQ-TO-XUy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.086274509799999996" green="0.1333333333" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="C5i-g9-LZ0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42" id="2uV-DV-OAb"/>
+                <constraint firstItem="sWd-eb-4PP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="4h7-nK-qRp"/>
+                <constraint firstItem="szj-9s-W5l" firstAttribute="leading" secondItem="sWd-eb-4PP" secondAttribute="trailing" constant="10" id="IUN-KB-xNi"/>
+                <constraint firstItem="szj-9s-W5l" firstAttribute="width" secondItem="sWd-eb-4PP" secondAttribute="width" id="Whb-65-foL"/>
+                <constraint firstAttribute="trailing" secondItem="szj-9s-W5l" secondAttribute="trailing" constant="5" id="fNT-JF-LjF"/>
+                <constraint firstItem="szj-9s-W5l" firstAttribute="top" secondItem="C5i-g9-LZ0" secondAttribute="bottom" constant="30" id="kDV-y2-dq0"/>
+                <constraint firstItem="C5i-g9-LZ0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mQg-OV-Iv3"/>
+                <constraint firstItem="sWd-eb-4PP" firstAttribute="top" secondItem="C5i-g9-LZ0" secondAttribute="bottom" constant="30" id="mbW-Hj-Jm0"/>
+                <constraint firstItem="C5i-g9-LZ0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="ss8-Gx-yrA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="C5i-g9-LZ0" secondAttribute="trailing" constant="5" id="vAx-Aj-DLK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="main_lbl" destination="C5i-g9-LZ0" id="I1u-jZ-nih"/>
+                <outlet property="no_btn" destination="sWd-eb-4PP" id="JN1-0C-rm9"/>
+                <outlet property="yes_btn" destination="szj-9s-W5l" id="IdJ-dE-BDy"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="91.40625"/>
+        </view>
+    </objects>
+</document>
